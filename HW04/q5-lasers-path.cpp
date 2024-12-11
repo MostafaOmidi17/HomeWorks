@@ -4,6 +4,8 @@
 #include "grader.h"
 
 
+
+//calculating the average.
 double average(int n, ...) {
     va_list args;
     va_start(args , n);
@@ -18,6 +20,8 @@ double average(int n, ...) {
     return average;
 }
 
+
+//calculating variance.
 double variance(int n, ...) {
     va_list args;
     va_start(args , n);
@@ -42,11 +46,16 @@ double variance(int n, ...) {
     return variance;
 }
 
+
+//calculating a.
 double calculate_a(int n, double average_x, double average_y, double average_xy, double variance_x) {
     double a = (n*(average_xy - average_x * average_y)) / ((n-1)*variance_x) ;
     return a;
 }
 
+
+
+//calculating a.
 double calculate_b(double a, double average_x, double average_y) {
     double b = average_y - a * average_x ;
     return b;

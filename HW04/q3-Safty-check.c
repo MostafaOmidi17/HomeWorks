@@ -1,7 +1,7 @@
 //403110393 mostafa omidi
 #include <stdio.h>
 
-
+//a function that give us the string of our string length.
 int string_length(char str[]){
     int length = 0;
     while(str[length] != '\0'){
@@ -10,7 +10,7 @@ int string_length(char str[]){
     return length;
 }
 
-
+//checking uppercase.
 int uppercase(char str[]){
     for(int i = 0 ; str[i] != '\0' ; i++){
         if((str[i] >= 'A') && (str[i] <= 'Z')){
@@ -20,7 +20,7 @@ int uppercase(char str[]){
     return 0;
 }
 
-
+//checking digit.
 int digit(char str[]){
     for(int i = 0 ; str[i] != '\0' ; i++){
         if((str[i] >= '0') && (str[i] <= '9')){
@@ -31,7 +31,7 @@ int digit(char str[]){
 }
 
 
-
+//checking vowel.
 int vowel(char str[]){
     for(int i = 0 ; str[i] != '\0' ; i++){
         if((str[i] == 'A') || (str[i] == 'a') || (str[i] == 'E') || (str[i] == 'e') || (str[i] == 'I') || (str[i] == 'i') || (str[i] == 'O') || (str[i] == 'o') || (str[i] == 'U') || (str[i] == 'u')){
@@ -41,7 +41,7 @@ int vowel(char str[]){
     return 0;
 }
 
-
+//checking length.
 int length(char str[]){
     int length = string_length(str);
     if(length >= 10){
@@ -50,7 +50,7 @@ int length(char str[]){
     return 0;
 }
 
-
+//checking punctuation.
 int punctuation(char str[]){
     for(int i = 0 ; str[i] != '\0' ; i++){
         int ascii_value = str[i];
@@ -61,7 +61,7 @@ int punctuation(char str[]){
     return 0;
 }
 
-
+//checking the sum of numbers.
 int numcheck(char str[]){
     int posneg = 1;
     int sum = 0;
@@ -86,7 +86,7 @@ int numcheck(char str[]){
     return 0;
 }
 
-
+//checking permutations.
 int permutation(const char str[]) {
     int len = string_length(str);
 

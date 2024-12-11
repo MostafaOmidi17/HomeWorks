@@ -1,9 +1,7 @@
 //403110393 mostafa omidi.
 
 #include <stdio.h>
-// segement(long long a);
-// base(long long a , long long b);
-// base_rev(long long a , long long b);
+
 
 
 //for going into decimal base;
